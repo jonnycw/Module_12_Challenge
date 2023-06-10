@@ -2,7 +2,7 @@
 
 ## Overview of the Analysis
 
-The aim of the analysis was to evaluate the effectiveness of two machine learning algorithms in identifying a loan as either 'healthy' or 'high risk'.
+The aim of the analysis was to evaluate the effectiveness of two machine learning algorithms in identifying a loan as either "healthy" or "high risk".
 
 The data utilized in creating these two models included a sum of 77,536 instances each characterized by 7 items (loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, and total debt).
 
