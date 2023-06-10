@@ -2,30 +2,25 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+The aim of the analysis was to evaluate the effectiveness of two machine learning algorithms in identifying a loan as either 'healthy' or 'high risk'.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+The data utilized in creating these two models included a sum of 77,536 instances each characterized by 7 items (loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, and total debt).
+
+The data was divided into training and test subsets. The models deployed for this comparison were both types of logistic regression models, developed using the LogisticRegression model from Scikit-learn. One model processed the original data while the other utilized resampled data with the aid of imblearn's RandomOverSampler.
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+**Machine Learning Model 1:**
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+The model shows high accuracy when predicting the healthy loan, with a precision of 1 and a recall of 0.99. Additionally, it has a high specificity of 0.91, demonstrating a low false-positive rate.
+
+The model shows lower accuracy when predicting a high-risk loan, as it has a precision of 0.85 and a recall of 0.91. However, it demonstrates a high specificity of 0.99, indicating a very low false-negative rate.
 
 
+**Machine Learning Model 2:**
 
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+The model again shows high accuracy when prediction the healthy loan, with a precision of 1 and a recall of 0.99. As for the high-risk loan, we can see an improvement in the model. Precision dropped from 0.85 to 0.84, however, recall increased from 0.91 to 0.99. Overall, we can see that the balanced accuracy score increased significantly from 0.952 to 0.994
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+Both models performed well and had similar accuracies for the "healthy" class. However, because it is more important for us to predict the "high risk" class, I recommend using the second machile learning model to take advantage of the improved accuracy.
