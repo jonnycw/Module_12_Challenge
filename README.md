@@ -1,5 +1,5 @@
 # Credit Risk Analysis
-## _Module 12 Challenge_
+ _Module 12 Challenge_
 
 ## Overview of the Analysis
 
